@@ -190,7 +190,7 @@ uploadBtn.addEventListener('click', async () => {
     if (name=="") return alert("Adicione o nome do carro")
     if (pass=="") return alert("Adicione o numero de passageiros")
     name=String(name).toLowerCase().replaceAll(" ","_")
-    pass+='passengers'
+    pass+=' passengers'
     
     uploadBtn.disabled = true;
     uploadBtn.textContent = "Enviando...";
@@ -357,3 +357,4 @@ async function getAll(lista_,nome,pass){
 </body>
 
 </html>
+
